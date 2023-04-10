@@ -1,15 +1,19 @@
 package com.bl.day2;
 
 public class SumOfNaturalNum {
-    static int num;
+    static int num = 5;
     static int sum;
+
     public static void main(String[] args) {
 
-        for (int num = 1; num <= 5; num++){
+        int num = 1;
+        while (num <= 5){
             sum = sum + num;
             System.out.print(num + "+" + "");
-        }
-        System.out.print("TotalSum" + "=" + sum);
 
+            num++;
+        }
+
+        System.out.print("TotalSum" + "=" + sum);
     }
 }
